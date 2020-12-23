@@ -1,4 +1,5 @@
 import React from 'react';
+import "./FileForm.css";
 
 class FileForm extends React.Component {
     constructor(props){

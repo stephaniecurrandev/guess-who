@@ -13,12 +13,12 @@ class Tile extends React.Component {
 
     handleClick = () => {
         if(this.props.isCard) return;
-        const next = this.state.status + 1 > 2? 0: this.state.status + 1;
-        this.setState({status:next})
+        const next = this.props.status + 1 > 2? 0: this.props.status + 1;
+        this.props.onStatusChange(next);
     }
 
     render(){
-        const containerClass = `tile ${statusTypes[this.state.status]}`;
+        const containerClass = `tile ${statusTypes[this.props.status]}`;
         return (
             <div className={containerClass} onClick={()=>this.handleClick()}>
                 <img src={this.props.imgSrc} border="0"/>
