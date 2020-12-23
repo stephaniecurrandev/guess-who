@@ -1,0 +1,21 @@
+img {
+    max-height: 70px;
+    max-width: 70px;
+    padding: 3px;
+}
+.tile {
+    flex: 1 0 21%;
+    border: 1px black solid;
+    margin: 3px;
+    cursor: pointer;
+}
+.eliminated {
+    background: red;
+}
+.maybe {
+    background: yellow;
+}
+
+.title {
+    font-size: 12px;
+}
