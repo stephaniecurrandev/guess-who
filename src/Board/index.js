@@ -1,6 +1,7 @@
 import React from 'react';
 import './Board.css';
 import Tile from '../atoms/Tile';
+import Button from '@material-ui/core/Button';
 
 class Board extends React.Component {
     constructor(props) {
@@ -34,11 +35,14 @@ class Board extends React.Component {
         const selectedCard = this.props.tiles[this.props.selectedCard];
         return (
             <div className="board">
-                <div><Tile isCard={true} {...selectedCard}/></div>
-                <button onClick={()=>this.handleRefresh()}>Refresh</button>
+                <div className="selected">
+                    <div>Your Card</div>
+                    <Tile isCard={true} {...selectedCard}/>
+                </div>
                 <div className="tiles">
                     {this.renderTiles()}
                 </div>
+                <Button variant="outlined" onClick={()=>this.handleRefresh()}>Refresh</Button>
             </div>
         );
 

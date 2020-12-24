@@ -1,5 +1,6 @@
 import React from 'react';
 import "./FileForm.css";
+import Button from '@material-ui/core/Button';
 
 class FileForm extends React.Component {
     constructor(props){
@@ -32,7 +33,7 @@ class FileForm extends React.Component {
         return (
             <div className="container">
                 {this.renderInput()}
-                <button onClick={this.handleSubmit}>Submit</button>
+                <Button onClick={this.handleSubmit}>Submit</Button>
             </div>
         );
 

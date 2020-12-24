@@ -8,3 +8,6 @@
     display: flex;
     flex-wrap: wrap;
 }
+.selected {
+    margin: 5px 0 1em 0;
+}

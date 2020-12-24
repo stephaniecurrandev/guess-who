@@ -34,3 +34,14 @@
     transform: rotate(360deg);
   }
 }
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.instructions {
+  padding: 1em;
+  text-align: center;
+}

@@ -34,7 +34,13 @@ class  App extends React.Component {
   render(){
     if(!this.state.file) {
       return (
-        <div>
+        <div className="intro">
+          <div className="instructions">
+            <h1>Welcome to "Guess Who?"</h1>
+            <h3>Instructions:</h3>
+            <div>Please upload a CSV with labels in the first column and the corresponding image urls in the second.</div>
+            <div>(Max 24 rows)</div>
+          </div>
           <FileForm onSubmit={(file)=>this.handleFileSubmit(file)}/>
         </div>
       );
