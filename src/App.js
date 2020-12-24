@@ -17,12 +17,12 @@ class  App extends React.Component {
   }
 
   handleRefreshCard = () => {
-    const selectedCard = getRandomInt(23);
+    const selectedCard = getRandomInt(this.state.tiles.length);
     this.setState({selectedCard});
   }
 
   loadData = (tiles) => {
-    const selectedCard = getRandomInt(23);
+    const selectedCard = getRandomInt(tiles.length);
     this.setState({selectedCard, tiles});
   }
 
